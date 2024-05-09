@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Project</title>
+    <link rel="stylesheet" href="style.css"/>  
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+
+<body>
+
+
+
+
+
+<section style="background-color: #C1CFEA; min-height: 100vh; margin:0;">
+  <div class="container py-5 h-100">
+
+    <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+      <div class="col-md-9 col-lg-7 col-xl-5">
+
+        <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+          <div class="card-body p-4">
+            <div id="demo1" class="carousel slide" data-ride="carousel">
+              <h1 class="text-center"><strong>Current conditions</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4" style="border-radius: 25px;">
+          <div class="card-body p-4">
+
+            <div id="demo2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                    <div class="flex-column">
+                      <p class="small"><h4>Current temperature</h4></p>
+                      <p class="mb-0"><strong id="temp"></strong></p>
+                    </div>
+                    <div class="flex-column">
+                      <p class="small"><h4>Current air humidity</h4></p>
+                      <p class="mb-0"><strong id="airHumidity"></strong></p>
+                    </div>
+                    <div class="flex-column">
+                      <p class="small"><h4>Current soil moisture</h4></p>
+                      <p class="mb-0"><strong id="soilM"></strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+          <div class="card-body p-4">
+            <div id="demo1" class="carousel slide" data-ride="carousel">
+              <div class="d-flex flex-column align-items-center">
+                <p class="small mb-4"><h4 id="fanStatus">Fan is currently: OFF!</h4></p>
+                <p class="small"><h4 id="waterPumpStatus">Water pump is currently: OFF!</h4></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+          <div class="card-body p-4">
+            <div id="demo1" class="carousel slide" data-ride="carousel">
+              <div class="d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-success btn-lg mr-2 mb-2" id="btnOn" onclick="turnOnTheFan()">Turn on the fan</button>
+                <button type="button" class="btn btn-success btn-lg mr-2 mb-2" id="btnOff" onclick="turnOffTheFan()">Turn off the fan</button>
+                <div id="spacer"></div>
+                <button type="button" class="btn btn-primary btn-lg ml-2 mb-2" id="btnTwoOn" onclick="turnOnWaterPump()">Turn on the water pump</button>
+                <button type="button" class="btn btn-primary btn-lg ml-2 mb-2" id="btnTwoOff" onclick="turnOffWaterPump()">Turn off the water pump</button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+</section>
+</body>
+<script type="module" src="/index.js"></script>
+
+</html>

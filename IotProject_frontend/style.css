@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.651);/*dodana linija*/
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#temperature, #soilMoisture, #temp, #soilM, #airHumidity, #airHum{
+    font-size: xx-large;
+}
+
+#btnOff{
+    display: none;
+}
+#btnTwoOff{
+    display: none;
+}
+option, select{
+    font-size: large;
+}
+#spacer{
+    margin: 10px;
+}
+
