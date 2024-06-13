@@ -17,7 +17,5 @@ A greenhouse monitoring system is a device consisting of an ESP8266 microcontrol
     <li>2 LED diodes</li>
 </ul>
 <b>Instructions for use:</b>
-
-Open IoTProject_frontend and run the command "npm install" in the terminal to install all necessary packages. After all necessary packages are installed, you need to enter the Firebase configuration in the index.js file at the designated location. Once these steps are completed, you need to run the IoTProject.ino file located in the IoTProject folder. Similarly to index.js, you need to enter the required data requested.
-After you complete all of this, you need to connect all the components to your ESP8266 microcontroller. After connecting components is finished,  the only things remaining are connecting the ESP8266 microcontroller to your computer using a Micro USB cable, running <b>frontend</b> and starting <b>IoTProject.ino</b> located in IotProject directory. 
-
+First thing that needs to be done is connecting all the components to your ESP8266 microcontroller.
+After connecting the components, open IoTProject_frontend and run the command "npm install" in the terminal to install all necessary packages. After all necessary packages are installed, you need to enter the Firebase configuration in the index.js file at the designated location. Once these steps are completed, you need to run the IoTProject.ino file located in the IoTProject folder. Similarly to index.js, you need to enter the required data requested. The only thing left to do is connecting the ESP8266 microcontroller to your computer and you can start measuring air humidity, soil moisture and temperature.
